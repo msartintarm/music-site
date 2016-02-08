@@ -1,0 +1,8 @@
+# Ignore the following files for the repo:
+
+# NPM Install artifacts
+node_modules/
+
+# App build artifacts
+lib/
+
