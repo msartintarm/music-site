@@ -1,19 +1,20 @@
+import React from 'react';
+import renderDashboard from './render';
 
-var renderBoards = function(boards) {
-	(for int i = 0; i < 10; ++i) {
-		console.log("yo");
-	}
-	return boards;
+/*
+	(c) 2016. All rights reserved.
+	React classes that use the render methods
+*/
+
+/*
+Might not need any class other than the top level
+class Music_Boards extends React.component {
+	render() { return renderDashboard(renderBoards); }
 };
+*/
+class Music_Dashboard extends React.component {
+	render() { return renderDashboard(arguments); }
+}
 
-var renderDashboard = function(dashboard) {
-	<Dashboard>
-		{dashboard.map(renderBoards)}
-	</Dashboard>
-};
-
-var Music = {};
-
-Music.Dashboard = React.createClass({
-	render: renderDashboard
-});
+/* ---- Only export the top level React class ---- */
+export { Music_Dashboard as default };
