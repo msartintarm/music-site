@@ -28,20 +28,11 @@ class CanvasComponent extends React.component {
         root.update(props);
         root.draw(props);
     }
-    defaultProps = {
-        rotation: 0
-    }
     render () {
         <div>
             <canvas ref={ (elem) => this._canvas = elem }>
             </canvas>
         </div>
-    }
-}
-
-class Music_Knob extends CanvasComponent {
-    draw () {
-        this._canvas.fill
     }
 }
 
