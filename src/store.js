@@ -7,7 +7,7 @@ class elementStore {
 	constructor() {
 		this._container = {};
 	}
-	createElement(key): {
+	createElement(key) {
 		console.warn("Node create method not implemented.");
 		return null;
 	} 
@@ -22,7 +22,7 @@ class elementStore {
 }
 
 class images extends store {
-	createElement(key): {
+	createElement(key) {
 		let the_image = new Image();
 		the_image.src = key;
 		the_image.width = 582;
@@ -32,7 +32,7 @@ class images extends store {
 }
 
 class canvases extends store {
-	createElement(key): {
+	createElement(key) {
 		let the_canvas = document.createElement("canvas");
 		offscreen.width = knob_image.width * 0.5;
 		offscreen.height = knob_image.height * 0.5;
