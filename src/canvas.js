@@ -1,3 +1,4 @@
+import { DRAW_WARN, CANVAS } from 'constants';
 // import React from 'react'; // Not sure if this is needed
 import { CanvasStore } from 'store';
 
@@ -6,9 +7,6 @@ import { CanvasStore } from 'store';
     React classes that use the render methods
 */
 
-const DRAW_WARN = "Implementations of canvas component must overwrite 'draw' method.";
-
-const CANVAS = 'canvas';
 
 /*
     - Binds canvas component

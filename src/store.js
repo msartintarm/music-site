@@ -3,6 +3,7 @@
 	Adds wrapper to JS key-val map that lets you instantiate DOM nodes if they aren't defined at time of get
 	- Call 'get' 
 */
+
 class elementStore {
 	constructor() {
 		this._container = {};
