@@ -1,3 +1,4 @@
+import { IMAGE_LOADED, IMAGE_ERROR } from 'constants';
 
 /*
 	Adds wrapper to JS key-val map that lets you instantiate DOM nodes if they aren't defined at time of get
@@ -25,9 +26,17 @@ class elementStore {
 class images extends store {
 	createElement(key) {
 		let the_image = new Image();
+		the_image.onLoad = () => {
+			console.log(IMAGE_LOADED);
+		};
+
+		the_image.onError = () => {
+			console.warn(IMAGE_ERROR);
+		};
 		the_image.src = key;
 		the_image.width = 582;
 		the_image.height = 582;
+
 		return the_image;
 	}
 }
