@@ -1,4 +1,4 @@
-import { IMAGE_LOADED, IMAGE_ERROR } from 'constants';
+import { CANVAS, IMAGE_LOADED, IMAGE_ERROR } from 'constants';
 
 /*
 	Adds wrapper to JS key-val map that lets you instantiate DOM nodes if they aren't defined at time of get
@@ -34,16 +34,13 @@ class images extends store {
 			console.warn(IMAGE_ERROR);
 		};
 		the_image.src = key;
-		the_image.width = 582;
-		the_image.height = 582;
-
 		return the_image;
 	}
 }
 
 class canvases extends store {
 	createElement(key) {
-		let the_canvas = document.createElement("canvas");
+		let the_canvas = document.createElement(CANVAS);
 		offscreen.width = knob_image.width * 0.5;
 		offscreen.height = knob_image.height * 0.5;
 
