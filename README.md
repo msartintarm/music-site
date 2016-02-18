@@ -8,8 +8,6 @@ To build:
 - NPM 3 installed: `npm install npm@latest` should succeed 
 - GOW tools installed if Windows. `make -v` should succeed (3.81 for me)
 - Git Bash installed / updated. `git -v` should succeed (1.9.5.mysisgit for me)
-- A couple other dependencies: `npm install react react-dom webpack webpack-dev-server`
-- New 2/13/16: `npm install -g babel-cli eslint babel-eslint`
 
 # 2. Install:
 - `git clone https://msartintarm@github.com/msartintarm/music-site my-chosen-directory`

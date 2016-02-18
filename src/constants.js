@@ -12,7 +12,7 @@ export const ROOT_ELEMENT = 'root';
 export const MUSIC_KNOB = 'music_knob';
 export const MUSIC_KNOB_CANVAS = 'music_knob_canvas';
 export const MUSIC_KNOB_OFF_CANVAS = 'music_knob_off_canvas';
-export const MUSIC_KNOB_IMAGE_URL = 'knob_image.png';
+export const MUSIC_KNOB_IMAGE_URL = 'lib/knob.png';
 export const MUSIC_KNOB_SIZE = 400;
 export const ROTATION = 'rotation';
 
